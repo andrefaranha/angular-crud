@@ -10,6 +10,7 @@ angular.module('CrudApp', []).
 function ListCtrl($scope, $http) {
   $http.get('api/users').success(function(data) {
     $scope.users = data;
+    $scope.users = 'TEST';
   });
 }
 
